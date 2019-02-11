@@ -1,0 +1,156 @@
+.action{
+    background: url(/assets/images/background/action.jpg) no-repeat center;
+    
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.action__title{
+    display: flex;
+    width: 100%;
+
+    @include sm{
+        justify-content: center;
+
+    }
+    @include xs{
+        justify-content: center;
+
+    }
+}
+
+.action__title-text{
+    color: $white;
+    font-size: 33px;
+    border: 0;
+
+    span{
+        color: $gold;
+
+       
+    }
+
+    @include sm{
+        text-align: center;
+    }
+    @include xs{
+        text-align: center;
+    }
+}
+
+.action__text{
+    font-weight: 600;
+    color: $white;
+    margin-top: 35px;
+    margin-top: 60px;
+
+   
+}
+
+.action__list{
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 64px;
+    margin-left: 32px;
+
+    .action__item{
+        position: relative;
+        margin: 5px 0px 5px 22px;
+
+        &::before{
+            content:"";
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            background-color: $gold;
+            border-radius: 50%;
+            margin-left: -22px;
+            bottom: 10px;
+        }
+    }
+}
+
+
+
+.try-button{
+    color: $white;
+    background-color: $gold;
+    border: 0;
+    padding: 10px 47px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $l-gray;
+    }
+
+}
+
+.action__foto{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+
+    @include sm{
+        padding-bottom: 35px;
+    }
+    @include xs{
+        padding-bottom: 35px;
+    }
+}
+
+.action__img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    @include sm{
+        position: relative;
+    }
+    @include xs{
+        position: relative;
+    }
+}
+
+.action__price{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background-color: $grey;
+    position: absolute;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+
+    @include sm{
+        bottom: 32px;
+    }
+
+    @include xs{
+        bottom: 32px;
+    }
+
+    P:first-child{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    P:last-child{
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 1;
+    }
+}

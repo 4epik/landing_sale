@@ -1,0 +1,74 @@
+section.section.contact(id='contact')
+    .container
+        .row
+            .col-md-7
+                .adress
+                    ul.adress__list
+                        li.adress__item
+                            .adress__content 
+                                .adress__text  San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000 
+                                .adress__phone Tell: 0927-338-2289 
+                                .adress__mail Email: jennpereira13(at)gmail.com
+                        li.adress__item 
+                            .adress__content
+                                .adress__text  San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000 
+                                .adress__phone Tell: 0927-338-2289 
+                                .adress__mail Email: jennpereira13(at)gmail.com
+                .payment
+                    h5.payment__title Secured Payment Trough:
+                    ul.payment__list
+                        li.payment__item
+                            a.payment__link.paypal(href="#")
+                        li.payment__item
+                            a.payment__link.mastercard(href="#")
+                        li.payment__item
+                            a.payment__link.google(href="#")
+                        li.payment__item
+                            a.payment__link.maestro(href="#")
+                        li.payment__item
+                            a.payment__link.ebay(href="#")
+                        li.payment__item
+                            a.payment__link.discover(href="#")
+                        li.payment__item
+                            a.payment__link.cirrus(href="#")
+                        li.payment__item
+                            a.payment__link.co(href="#")
+                        li.payment__item
+                            a.payment__link.visa(href="#")
+                        li.payment__item
+                            a.payment__link.direct(href="#")
+                .disclaimer
+                    h5.disclaimer__title Disclaimer:
+                    .disclaimer__text
+                        p "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        p "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            .col-md-5.contact__container
+                
+                    form.form(action="#" id="contact-form")
+                        h2.form__title Contact us
+                        ul.form__list
+                            li.form__item
+                                label.name(for="name") Your Name
+                                input.name__input(type="text" name="name" value="Your Name*" required)
+                            li.form__item
+                                label.mail(for="mail") Your Email
+                                input.mail__input(type="email" name="mail" value="Your Email*" required) 
+                            li.form__item
+                                label.subject(for="subject") Your Email
+                                input.subject__input(type="text" name="subject" value="Subject*" required) 
+                            li.form__item
+                                textarea.text__input(name="message" required) Message*
+                            li.form__item 
+                                button.form__btn.btn.btn-secondary(type="submit") Send Message
+                            li.form__item
+                                .form__comment
+                                    .form__comment-note
+                                        span.form__comment-text Don’t worry your email infomation is safe with us. 
+                                        span.form__comment-text We hate spam as much as you hate. 
+
+
+        
+
+    
+    include ../common/footer.pug
+        

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Produse</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="section general" id="general">
+          <div class="container">
+            <div class="header">
+              <div class="row">
+                <div class="logo col-md-12 col-sm-10 col-9"><img class="logo-img" src="../../assets/images/logo.png" alt="logo"></div>
+                <div class="col-sm-1 col-2">
+                  <div class="hamburger"> 
+                    <button class="hamburger_link" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></button>
+                    <div class="overlay" id="overlay">
+                      <div class="overlay__menu">
+                        <ul class="overlay__list">
+                          <li class="overlay__item"><a class="overlay__item-link" href="#general">Home</a></li>
+                          <li class="overlay__item"><a class="overlay__item-link" href="#about">About the Product</a></li>
+                          <li class="overlay__item"><a class="overlay__item-link" href="#benefits">Benefits</a></li>
+                          <li class="overlay__item"><a class="overlay__item-link" href="#comment">Testimonials</a></li>
+                          <li class="overlay__item"><a class="overlay__item-link" href="#action">Buy</a></li>
+                          <li class="overlay__item"><a class="overlay__item-link" href="#contact">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">   
+                <div class="col-md-12">
+                  <ul class="nav-list nav nav-pills nav-fill">
+                    <li class="nav-item"> <a class="nav-link" href="#general">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#about">About the Product</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comment">Testimonials</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#action">Buy</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="general-row row">   
+              <div class="col-left col-lg-6 col-md-6">
+                <div class="general__pic"><img class="general__img" src="../assets/images/item.png" alt="item"></div>
+              </div>
+              <div class="col-right col-lg-6 col-md-6">
+                <h3 class="general__title">INCREASE YOUR <br>ENGERGY LEVEL WITH 
+                  <p class="general__title-text">GARCINIA CAMBOGIA</p>
+                </h3>
+                <div class="general__content">
+                  <form class="form" action="order.php" id="order-form" method="post">
+                    <h2 class="form__title">Try it today</h2>
+                    <ul class="form__list">
+                      <li class="form__item">
+                        <label class="name" for="name">Your Name</label>
+                        <input class="name__input" type="text" name="name" value="Your Name*" required>
+                      </li>
+                      <li class="form__item">
+                        <label class="mail" for="mail">Your Email</label>
+                        <input class="mail__input" type="email" name="mail" value="Your Email*" required>
+                      </li>
+                      <li class="form__item"> 
+                        <button class="form__btn btn btn-secondary" type="submit"> ORDER NOW</button>
+                      </li>
+                      <li class="form__item">
+                        <div class="form__comment">
+                          <div class="form__comment-note"><span class="form__comment-text">Don’t worry your email infomation is safe with us. </span><span class="form__comment-text">We hate spam as much as you hate. </span></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="about__title">ABOUT GARCINIA CAMBOGIA</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="about__content">
+                  <h4 class="about__content-title">Reduce food intake and promote<span>&nbsp; weight loss fast!</span></h4>
+                  <div class="about__content-text">Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic' environment by working together and in synergy. Some of these ingredients also aid in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals.</div>
+                  <div class="about__product">
+                    <h4 class="about__product-title">Other <span>&nbsp; Related </span><span>&nbsp; Products</span></h4>
+                    <ul class="about__product-list">
+                      <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="../assets/images/product/1.jpg" alt="product"></a>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_1"><img class="zoom" src="../assets/images/zoom.png"></div>
+                      </li>
+                      <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="../assets/images/product/2.jpg" alt="product"></a>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_2"><img class="zoom" src="../assets/images/zoom.png"></div>
+                      </li>
+                      <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="../assets/images/product/3.jpg" alt="product"></a>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_3"><img class="zoom" src="../assets/images/zoom.png"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="modal__overlay close" id="modal"></div>
+        <div class="modal close" data-modal="modal_1">
+          <div class="content"><img class="about__product-img" src="../assets/images/product/1.jpg" alt="product"></div><a class="close__link js-close" href="#" data-modal="modal_1">Close</a>
+        </div>
+        <div class="modal close" data-modal="modal_2">
+          <div class="content"><img class="about__product-img" src="../assets/images/product/2.jpg" alt="product"></div><a class="close__link js-close" href="#" data-modal="modal_2">Close</a>
+        </div>
+        <div class="modal close" data-modal="modal_3">
+          <div class="content"><img class="about__product-img" src="../assets/images/product/3.jpg" alt="product"></div><a class="close__link js-close" href="#" data-modal="modal_3">Close</a>
+        </div>
+        <section class="section benefits" id="benefits">
+          <div class="container">
+            <div class="title-row row">
+              <div class="col-md-5">
+                <h2 class="benefits__title">WHAT ARE THE BENEFITS</h2>
+              </div>
+              <div class="col-md-7">
+                <div class="benefits__slogan">
+                  <p class="benefirts__slogan-text">Obasity is an imbalance between fat intake and energy expenditure. </p>
+                  <p class="benefirts__slogan-text">Now day obesity is a problem of health and mind in many people.</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefits__foto"><img class="benefits__foto-img" src="../assets/images/man.png" alt="man"></div>
+            <div class="benefits__content row">
+              <div class="col-lg-9 col-md-10 order-first"> 
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="benefits__text"> 
+                      <p>The rush hours working lifestyle make many people take junk food and fast food more than nutritionists. The important factor is Generic, it is found that one obese patient has a 40% chance of obesity and both obese patients have 80% chance of obesity. The chronic diseases that are developed from obesity are diabetes, high blood pressure, stroke, heart attack, cancer, gout and sleep apnea. So control the weight is the best way to void health problem. </p>
+                      <p>Control the body weight helps you against the chronic diseases and make good looking. There are many ways to reduce and control the weight. Using weight control products is not the best way, especially use potential dangerous diet products without consult from the doctors or the pharmacists. Balance the energy  expenditure and fat intake is an important point. If you eat more you have to exercise more. Other ways are break bad habits such as alcohol intake, watching T.V. during eating, or ignore vegetables. You have to realize how much the fat in each menu and should the low cholesterol with high nutrition.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="benefits__content-title">Here are the Beneftis You can get from 
+                      <p>Garcinia Combogia:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="benefits__list">
+                      <li class="benefits__item"> <span>Increases energy levels</span></li>
+                      <li class="benefits__item"> <span>Powerful insulin potentiator</span></li>
+                      <li class="benefits__item"> <span>Balances blood sugar levels</span></li>
+                      <li class="benefits__item"> <span>Transports blood sugar into the cells</span></li>
+                      <li class="benefits__item"> <span>Aids in controlling carbohydrate cravings</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="benefits__list">
+                      <li class="benefits__item"> <span>Raises the body's metabolic rate</span></li>
+                      <li class="benefits__item"> <span>A highly effective calorie and fat burner</span></li>
+                      <li class="benefits__item"> <span>Helps to burn fat</span></li>
+                      <li class="benefits__item"> <span>Does not affect the central nervous system</span></li>
+                      <li class="benefits__item"> <span>Increases energy levels</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section use">
+          <div class="container">
+            <div class="use__title-row row">
+              <div class="col-md-7">
+                <div class="use__slogan">
+                  <p class="use__slogan-text">Obesity is an imbalance between fat intake and energy expenditure. </p>
+                  <p class="use__slogan-text">Now day obesity is a problem of health and mind in many people.</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <h2 class="use__title">WHAT ARE THE BENEFITS</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="use__content-title">Reduce food intake and promote<span>&nbsp; weight loss fast!</span></h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="use__content-text">Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic' environment by working together and in synergy. Some of these ingredients also aid in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="use__list">
+                  <li class="use__item">
+                    <div class="use__item-number">1</div>
+                    <div class="use__item-text">The active ingredient in Garcinia Cambogia is Hydroxyciric acid (HCA). It works as inhibit fat and cholesterol accumulation by slowing down the enzyme.</div>
+                  </li>
+                  <li class="use__item">
+                    <div class="use__item-number">2</div>
+                    <div class="use__item-text">The active ingredient in Garcinia Cambogia is Hydroxyciric acid (HCA). It works as inhibit fat and cholesterol accumulation by slowing down the enzyme.</div>
+                  </li>
+                  <li class="use__item">
+                    <div class="use__item-number">3</div>
+                    <div class="use__item-text">The active ingredient in Garcinia Cambogia is Hydroxyciric acid (HCA). It works as inhibit fat and cholesterol accumulation by slowing down the enzyme.</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section comment" id="comment">
+          <div class="container">
+            <div class="row comment__row"> 
+              <div class="col-lg-8 col-md-7">
+                <div class="comment__title">
+                  <h2 class="comment__title-text">Image YOUR BODY SO HEALTHY!</h2>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5">
+                <div class="order"><a class="order-button" type="submit" href="#general">
+                    <p>Try This Product</p>
+                    <p>money back Gaurantee</p></a></div>
+              </div>
+            </div>
+            <div class="row slider__row">
+              <div class="col-md-12">
+                <div class="slider" id="slider">
+                  <div class="slider__content">
+                    <ul class="slider__list">
+                      <li class="slider__item">
+                        <div class="slider__list-foto"><img class="slider__list-img" src="../assets/images/foto/1.jpg" alt="Jannie Doe"></div>
+                        <div class="slider__list-content">
+                          <div class="slider__list-text">“Garcinia cambogia is one of the main components in one of the best-selling supplemental weight loss products, Hydroxycut., and researchers have concluded that "the evidence for G. cambogia is not compelling." </div>
+                          <div class="slider__list-author">Jannette Doe | Abc Company</div>
+                        </div>
+                      </li>
+                      <li class="slider__item">
+                        <div class="slider__list-foto"><img class="slider__list-img" src="../assets/images/foto/2.jpg" alt="Jannie Doe"></div>
+                        <div class="slider__list-content">
+                          <div class="slider__list-text">“Garcinia cambogia is one of the main components in one of the best-selling supplemental weight loss products, Hydroxycut., and researchers have concluded that "the evidence for G. cambogia is not compelling." </div>
+                          <div class="slider__list-author">Jannette Doe | Abc Company</div>
+                        </div>
+                      </li>
+                      <li class="slider__item">
+                        <div class="slider__list-foto"><img class="slider__list-img" src="../assets/images/foto/1.jpg" alt="Jannie Doe"></div>
+                        <div class="slider__list-content">
+                          <div class="slider__list-text">“Garcinia cambogia is one of the main components in one of the best-selling supplemental weight loss products, Hydroxycut., and researchers have concluded that "the evidence for G. cambogia is not compelling." </div>
+                          <div class="slider__list-author">Jannette Doe | Abc Company</div>
+                        </div>
+                      </li>
+                      <li class="slider__item">
+                        <div class="slider__list-foto"><img class="slider__list-img" src="../assets/images/foto/2.jpg" alt="Jannie Doe"></div>
+                        <div class="slider__list-content">
+                          <div class="slider__list-text">“Garcinia cambogia is one of the main components in one of the best-selling supplemental weight loss products, Hydroxycut., and researchers have concluded that "the evidence for G. cambogia is not compelling." </div>
+                          <div class="slider__list-author">Jannette Doe | Abc Company</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div><a class="slider__control slider__control_left" href="#" role="button">></a><a class="slider__control slider__control_right slider__control_show" href="#" role="button"><</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section action" id="action">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="action__title">
+                  <h2 class="action__title-text">Increase Your Energy Level with &nbsp; <span>Garcinia Cambogia</span></h2>
+                </div>
+                <div class="action__text">It works as inhibit fat and cholesterol accumulation by slowing down the enzyme. Get The Most Effective Fat Burning Supplement Now!</div>
+                <ul class="action__list">
+                  <li class="action__item">Promotes weight loss</li>
+                  <li class="action__item">Suppresses appetite</li>
+                  <li class="action__item">Increases fat oxidation</li>
+                  <li class="action__item">Promotes glycogen synthesis</li>
+                </ul>
+                <button class="try-button" type="submit">Try it Now</button>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="action__foto"><img class="action__img" src="../assets/images/item2.png" alt="item">
+                  <div class="action__price"> 
+                    <p>only </p>
+                    <p><sup> $ </sup> 99.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section contact" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="adress">
+                  <ul class="adress__list">
+                    <li class="adress__item">
+                      <div class="adress__content"> 
+                        <div class="adress__text"> San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000 </div>
+                        <div class="adress__phone">Tell: 0927-338-2289 </div>
+                        <div class="adress__mail">Email: jennpereira13(at)gmail.com</div>
+                      </div>
+                    </li>
+                    <li class="adress__item"> 
+                      <div class="adress__content">
+                        <div class="adress__text"> San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000 </div>
+                        <div class="adress__phone">Tell: 0927-338-2289 </div>
+                        <div class="adress__mail">Email: jennpereira13(at)gmail.com</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="payment">
+                  <h5 class="payment__title">Secured Payment Trough:</h5>
+                  <ul class="payment__list">
+                    <li class="payment__item"><a class="payment__link paypal" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link mastercard" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link google" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link maestro" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link ebay" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link discover" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link cirrus" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link co" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link visa" href="#"></a></li>
+                    <li class="payment__item"><a class="payment__link direct" href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="disclaimer">
+                  <h5 class="disclaimer__title">Disclaimer:</h5>
+                  <div class="disclaimer__text">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 contact__container">
+                <form class="form" action="#" id="contact-form">
+                  <h2 class="form__title">Contact us</h2>
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <label class="name" for="name">Your Name</label>
+                      <input class="name__input" type="text" name="name" value="Your Name*" required>
+                    </li>
+                    <li class="form__item">
+                      <label class="mail" for="mail">Your Email</label>
+                      <input class="mail__input" type="email" name="mail" value="Your Email*" required>
+                    </li>
+                    <li class="form__item">
+                      <label class="subject" for="subject">Your Email</label>
+                      <input class="subject__input" type="text" name="subject" value="Subject*" required>
+                    </li>
+                    <li class="form__item">
+                      <textarea class="text__input" name="message" required>Message*</textarea>
+                    </li>
+                    <li class="form__item"> 
+                      <button class="form__btn btn btn-secondary" type="submit">Send Message</button>
+                    </li>
+                    <li class="form__item">
+                      <div class="form__comment">
+                        <div class="form__comment-note"><span class="form__comment-text">Don’t worry your email infomation is safe with us. </span><span class="form__comment-text">We hate spam as much as you hate. </span></div>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="row footer-row">
+                <div class="col-md-6">
+                  <div class="logo"><img class="logo-img" src="../../assets/images/logo.png" alt="logo">
+                    <p>Copyright © 2009–2014 JLP MEDIA. </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="social">
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link" href="#"><span class="fab fa-facebook-f"></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                      <li class="social__item"><a class="social__link" href="#"><span class="fab fa-twitter"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

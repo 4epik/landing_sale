@@ -1,0 +1,204 @@
+.hamburger {
+    position: relative;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    margin-top: 15px;
+    z-index: 9999;
+    display: none;
+  
+    @include sm{
+        display: block;
+    }
+
+    @include xs{
+        display: block;
+    }
+    
+  
+   
+    
+    
+  }
+  
+   
+  .hamburger_link {
+    position: absolute;
+    top: 4%;
+    right: 17%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+    background: 0;
+    border: 0;
+    
+    &:hover {
+      opacity: .7;
+    }
+  
+    &:focus {
+      border: none;
+      opacity: .7;
+    }
+    
+    &.active {
+      margin-top: 15px;
+      position: fixed;
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: $white;
+        
+      }
+      .middle {
+        opacity: 0;
+        background: $white;
+      }
+      
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: $white;
+      }
+    }
+    
+    span {
+    background: $gold;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  all .35s ease;
+    cursor: pointer;
+      
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      
+      &:nth-of-type(3) {
+        top: 22px;
+      }
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    background: $gold;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, width .35s;
+    overflow: hidden;
+    
+    &.open {
+      opacity: .9;
+      visibility: visible;
+      width: 100%;
+      
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+        
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+      }
+    }
+    .overlay__menu{
+      position: relative;
+      height: 45%;
+      top: 38%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+    .overlay__list{
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%; 
+      
+      .overlay__item {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+        
+        .overlay__item-link{
+          font-family: 'Open Sans', sans-serif;
+          text-transform: uppercase;
+          font-size: 40px;
+          display: block;
+          position: relative;
+          color: $white;
+          text-decoration: none;
+          //overflow: hidden;
+  
+          @include sm{
+            font-size: 50px;
+          }
+  
+  
+          @include xs{
+            font-size: 30px;
+          }
+          
+          &:hover:after,
+           &:focus:after,
+           &:active:after {
+             width: 100%;
+           }
+          
+          &:after {
+            margin-top: 32px;
+            content: ' ';
+            @include line(50px, 2px, $white);
+            top: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            //height: 3px;
+            background: $gold;
+            transition: .35s;
+  
+            @include xs{
+              margin-top: 7px;
+              top: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }

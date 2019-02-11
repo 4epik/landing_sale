@@ -1,0 +1,153 @@
+.contact{
+    flex-direction: column;
+
+}
+
+
+
+.adress{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+
+.adress__list{
+
+    margin-left: 23px;
+}
+
+.adress__item{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 23px;
+    
+    position: relative;
+
+    &::before{
+        content:"";
+        width: 76px;
+        height: 64px;
+        background-image: url(/assets/images/envelope.png);
+
+        @include md{
+            height: 54px;
+            background-size: contain;
+        }
+
+        @include sm{
+            width: 98px;
+            background-size: contain;
+        }
+        @include xs{
+            width: 98px;
+            background-size: contain;
+        }
+    }
+}
+
+.adress__content{
+    margin-left: 11px;
+}
+
+.payment{
+    background-color: $grey;
+    padding: 28px 20px;
+    margin-top: 63px;
+}
+
+.payment__title{
+    color: $white;
+}
+
+.payment__list{
+    list-style: none;
+    text-align: left;
+    margin-top: 18px;
+    
+    
+}
+
+.payment__item{
+    display: inline-block;
+    height: 31px;
+    width: 49px;
+    margin: 0;
+    
+}
+
+.payment__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/payment_sprite.png);
+    background-size: 501%;
+
+}
+
+.mastercard{
+    background-position: 198px 0px;
+}
+
+.google{
+    background-position: 396px 0px;
+}
+
+.maestro{
+    background-position: 594px 0px;
+}
+.ebay{
+    background-position: 791px 0px;
+}
+.discover{
+    background-position: 0px 152px;
+}
+.cirrus{
+    background-position: 198px 152px;
+}
+.co{
+    background-position: 396px 152px;
+}
+.visa{
+    background-position: 594px 152px;
+}
+.direct{
+    background-position: 791px 152px;
+}
+
+
+.disclaimer{
+    margin-top: 25px;
+    color: $l-gray;
+    font-size: 10px;
+    text-align: left;
+
+    p{
+        margin-top: 13px;
+    }
+
+    @include sm{
+        padding-bottom: 35px;
+    }
+    @include xs{
+        padding-bottom: 35px;
+    }
+}
+
+.disclaimer__title{
+    color: $l-gray;
+}
+
+.contact__container{
+    height: 100%;
+    width: 100%;
+
+    @include sm{
+        padding: 0;
+    }
+
+    
+    @include xs{
+        padding: 0;
+    }
+}

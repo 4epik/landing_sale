@@ -1,0 +1,213 @@
+
+@import 'layout/_fonts.scss';
+@import 'layout/_variables.scss';
+@import 'layout/_mixin.scss';
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+   height: 100%;
+   width: 100%;
+   font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+
+    @include sm{
+        height: auto;
+    }
+
+}
+
+.maincontent{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @include sm{
+        height: auto;
+    }
+
+    @include xs{
+        height: auto;
+    }
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $gold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include sm{
+        font-size: 29px;
+    }
+
+}
+
+h3{
+    color: $gold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+
+
+    
+
+}
+
+h2{
+    color: $gold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    margin-top: 28px;
+    position: relative;
+    border-bottom: 1px solid $gold;
+    width: 80%;
+}
+
+h4{
+    color: $l-gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+h5{
+    width: 100%;
+    color: $grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 1px solid $l-gray;
+    padding-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ a{
+     text-decoration: none;
+
+     &:hover{
+         text-decoration: none;
+     }
+ }
+
+ p{
+     padding: 0;
+     margin: 0;
+ }
+
+ label{
+     display: none;
+ }
+
+ span{
+     margin: 0;
+     padding: 0;
+ }
+
+ input{
+    width: 100%;
+     background: $yellow;
+     margin-top: 8px;
+     border-radius: 2px;
+     border: 0;
+     color: $grey;
+     font-size: 12px;
+     padding: 12px;
+
+     &::focus{
+         border: 0;
+     }
+ }
+
+@import 'common/hamburger';
+@import 'common/general';
+@import 'common/about';
+@import 'common/benefits';
+@import 'common/use';
+@import 'common/comment';
+@import 'common/action';
+@import 'common/contact';
+@import 'common/footer';

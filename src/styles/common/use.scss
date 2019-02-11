@@ -1,0 +1,164 @@
+.use{
+    
+}
+
+
+.use__title-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid $gold;
+    margin-top: 80px;
+    
+    @include sm {
+        margin-top: 30px;
+    }
+    @include xs {
+        margin-top: 30px;
+    }
+    
+    
+
+}
+
+
+
+.use__title{
+    text-align: left;
+    width: 100%;
+    border: 0;
+
+    @include sm{
+        
+        text-align: center;
+    }
+
+    @include xs{
+        
+        text-align: center;
+    }
+
+    
+    
+}
+
+.use__slogan{
+    font-size: 16px;
+    color: $l-gray;
+    text-align: left;
+    border-right: 1px solid $gold;
+    height: 100%;
+    //padding-bottom: 16px;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
+    @include sm{
+        border: none;
+        text-align: center;
+    }
+
+    @include xs{
+        border: none;
+        text-align: center;
+    }
+}
+
+
+.use__content-title{
+    margin-top: 34px;
+
+    @include sm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include xs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    span{
+        color: $gold;
+    }
+}
+
+.use__content-text{
+    color: $l-gray;
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
+.use__list{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    @include sm{
+        padding-bottom: 35px;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    @include xs{
+        padding-bottom: 35px;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+}
+
+
+.use__item{
+    width: 30%;
+    margin-left: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bege;
+    padding: 25px;
+    box-shadow: 2px #000000;
+
+    @include sm{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    @include xs{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .use__item-number{
+        font-size: 36px;
+        font-weight: 800;
+        color: $white;
+        text-align: center;
+        width: 75px;
+        height: 75px;
+        background-color: $l-gray;
+        padding-top: 5%;
+        border-radius: 50%;
+
+        @include sm{
+            padding-top: 2%;
+        }
+
+        @include xs{
+            padding-top: 2%;
+        }
+    }
+
+    .use__item-text{
+        color: $l-gray;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
