@@ -1,5 +1,5 @@
 .benefits{
-    background: url(/assets/images/background/benefits.jpg) no-repeat center;
+    background: url(../images/background/benefits.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -106,7 +106,7 @@
 
     &::before{
         content: "";
-        background-image: url(/assets/images/check.png);
+        background-image: url(../images/check.png);
         width: 15px;
         height: 12px;
         position: absolute;

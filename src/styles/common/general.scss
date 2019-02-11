@@ -1,5 +1,5 @@
 .general{
-    background: url(/assets/images/background/general.jpg) no-repeat center;
+    background: url(../images/background/general.jpg) no-repeat center;
     
     background-size: cover;
     flex-direction: column;
@@ -197,7 +197,7 @@
 
     &::before{
         content: "";
-        background-image: url(/assets/images/lock.png);
+        background-image: url(../images/lock.png);
         width: 15px;
         height: 16px;
         margin-left: -24px;

@@ -28,7 +28,7 @@
         content:"";
         width: 76px;
         height: 64px;
-        background-image: url(/assets/images/envelope.png);
+        background-image: url(../images/envelope.png);
 
         @include md{
             height: 54px;
@@ -80,7 +80,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(/assets/images/payment_sprite.png);
+    background-image: url(../images/payment_sprite.png);
     background-size: 501%;
 
 }
