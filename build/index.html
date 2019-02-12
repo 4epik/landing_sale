@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Produse</title>
@@ -61,20 +61,18 @@
                 <div class="general__pic"><img class="general__img" src="assets/images/item.png" alt="item"></div>
               </div>
               <div class="col-right col-lg-6 col-md-6">
-                <h3 class="general__title">INCREASE YOUR <br>ENGERGY LEVEL WITH 
-                  <p class="general__title-text">GARCINIA CAMBOGIA</p>
-                </h3>
+                <h3 class="general__title">INCREASE YOUR <br>ENGERGY LEVEL WITH <span class="general__title-text">GARCINIA CAMBOGIA</span></h3>
                 <div class="general__content">
                   <form class="form" action="order.php" id="order-form" method="post">
                     <h2 class="form__title">Try it today</h2>
                     <ul class="form__list">
                       <li class="form__item">
                         <label class="name" for="name">Your Name</label>
-                        <input class="name__input" type="text" name="name" value="Your Name*" required>
+                        <input class="name__input" type="text" name="name" value="Your Name*" id="name" required>
                       </li>
                       <li class="form__item">
                         <label class="mail" for="mail">Your Email</label>
-                        <input class="mail__input" type="email" name="mail" value="Your Email*" required>
+                        <input class="mail__input" type="email" name="mail" value="Your Email*" id="mail" required>
                       </li>
                       <li class="form__item"> 
                         <button class="form__btn btn btn-secondary" type="submit"> ORDER NOW</button>
@@ -107,13 +105,13 @@
                     <h4 class="about__product-title">Other <span>&nbsp; Related </span><span>&nbsp; Products</span></h4>
                     <ul class="about__product-list">
                       <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="assets/images/product/1.jpg" alt="product"></a>
-                        <div class="about__product-hover js-open-modal" data-modal="modal_1"><img class="zoom" src="assets/images/zoom.png"></div>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_1"><img class="zoom" src="assets/images/zoom.png" alt="zoom"></div>
                       </li>
                       <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="assets/images/product/2.jpg" alt="product"></a>
-                        <div class="about__product-hover js-open-modal" data-modal="modal_2"><img class="zoom" src="assets/images/zoom.png"></div>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_2"><img class="zoom" src="assets/images/zoom.png" alt="zoom"></div>
                       </li>
                       <li class="about__product-item"><a class="about__product-link" href="#"><img class="about__product-img" src="assets/images/product/3.jpg" alt="product"></a>
-                        <div class="about__product-hover js-open-modal" data-modal="modal_3"><img class="zoom" src="assets/images/zoom.png"></div>
+                        <div class="about__product-hover js-open-modal" data-modal="modal_3"><img class="zoom" src="assets/images/zoom.png" alt="zoom"></div>
                       </li>
                     </ul>
                   </div>
@@ -239,7 +237,7 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-5">
-                <div class="order"><a class="order-button" type="submit" href="#general">
+                <div class="order"><a class="order-button" href="#general">
                     <p>Try This Product</p>
                     <p>money back Gaurantee</p></a></div>
               </div>
@@ -278,7 +276,7 @@
                         </div>
                       </li>
                     </ul>
-                  </div><a class="slider__control slider__control_left" href="#" role="button">></a><a class="slider__control slider__control_right slider__control_show" href="#" role="button"><</a>
+                  </div><a class="slider__control slider__control_left" href="#" role="button">&gt</a><a class="slider__control slider__control_right slider__control_show" href="#" role="button">&lt</a>
                 </div>
               </div>
             </div>
@@ -361,16 +359,16 @@
                   <h2 class="form__title">Contact us</h2>
                   <ul class="form__list">
                     <li class="form__item">
-                      <label class="name" for="name">Your Name</label>
-                      <input class="name__input" type="text" name="name" value="Your Name*" required>
+                      <label class="name" for="name1">Your Name</label>
+                      <input class="name__input" type="text" name="name" value="Your Name*" id="name1" required>
                     </li>
                     <li class="form__item">
-                      <label class="mail" for="mail">Your Email</label>
-                      <input class="mail__input" type="email" name="mail" value="Your Email*" required>
+                      <label class="mail" for="mail1">Your Email</label>
+                      <input class="mail__input" type="email" name="mail" value="Your Email*" id="mail1" required>
                     </li>
                     <li class="form__item">
                       <label class="subject" for="subject">Your Email</label>
-                      <input class="subject__input" type="text" name="subject" value="Subject*" required>
+                      <input class="subject__input" type="text" name="subject" value="Subject*" id="subject" required>
                     </li>
                     <li class="form__item">
                       <textarea class="text__input" name="message" required>Message*</textarea>
